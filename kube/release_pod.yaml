@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: release-nginx
+  labels:
+    branch: release-nginx
+spec:
+  containers:
+  - name: release-nginx-container
+    image: prakuldip/cloudethix_release_nginx_kuldip:v1
+    ports:
+    - containerPort: 80
